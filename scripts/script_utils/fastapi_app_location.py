@@ -20,4 +20,4 @@
 # pylint: skip-file
 
 # Please adapt to package structure:
-from my_microservice.api.main import app
+from ghga_xlsgen.api.main import app

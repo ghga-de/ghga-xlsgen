@@ -137,6 +137,9 @@ def generate_config_docs() -> str:
     """Generate markdown-formatted documentation for the configration parameters
     listed in the config schema."""
 
+    if not CONFIG_SCHEMA_PATH.exists():
+        return ""
+
     parser = jsonschema2md.Parser(
         examples_as_yaml=False,
         show_examples="all",
